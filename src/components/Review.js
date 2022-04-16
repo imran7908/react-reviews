@@ -1,5 +1,6 @@
 import React from 'react'
 import reviews from './data.js'
+import './styles.css'
 
 const Review = ({ id, increment, decrement, surpriseMe }) => {
     const { name, job, image, text } = reviews[id];

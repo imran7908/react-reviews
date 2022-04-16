@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Review from './components/Review';
 import reviews from './components/data';
+import './components/styles.css'
 
 const App = () => {
   const [id, setId] = useState(0);
@@ -32,9 +33,9 @@ const App = () => {
 
   return (
     <main>
-      <div>
+      <div className='title'>
         <h2>Our Reviews</h2>
-        <div></div>
+        <div className='underline'></div>
       </div>
       <article>
         <Review id={id} increment={increment} decrement={decrement} surpriseMe={surpriseMe} />
