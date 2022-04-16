@@ -14,10 +14,10 @@ const Review = ({ id, increment, decrement, surpriseMe }) => {
         <footer>
             <p>{text}</p>
             <div>
-                <button onClick={decrement}>{`<`}</button>
-                <button onClick={increment}>{`>`}</button>
+                <button className='btn' onClick={decrement}>{`<`}</button>
+                <button className='btn' onClick={increment}>{`>`}</button>
             </div>
-            <button onClick={surpriseMe}>Surprise Me</button>
+            <button className='btn-surprise' onClick={surpriseMe}>Surprise Me</button>
         </footer>
     </>
   )
